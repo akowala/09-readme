@@ -34,6 +34,14 @@ inquirer
     message:"Please choose from a list of licenses for your application.",
     name: "license",
     choices:[ "MIT", "Apache 2.0", "Mozilla Public, 2.0"]
+}, {
+    type: "input",
+    message: "Please enter your GitHub username.",
+    name:"github"
+}, {
+    type: "input",
+    message: "pleae enter your email.",
+    name: email
 }
 ])
 // this needs to be fixed
