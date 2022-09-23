@@ -10,23 +10,23 @@ inquirer
     message: "Please provide the name of your project.",
     name: "name"
 }, {
-    type: "editor",
+    type: "input",
     message:"Please enter a desription of your project.",
     name: "description"
 }, {
-    type: "editor",
+    type: "input",
     message:"Please include all information about installation instructions",
     name:"installation"
 }, {
-    type:"editor",
+    type:"input",
     message:"Please include details about the usage of your project.",
     name:"usage"
 }, {
-    type:"editor",
+    type:"input",
     message:"Please include contribution guidelines.",
     name:"contributions"
 }, {
-    type:"editor",
+    type:"input",
     message:"Please including testing instructions for your project.",
     name: "testing"
 }, {
@@ -40,8 +40,8 @@ inquirer
     name:"github"
 }, {
     type: "input",
-    message: "pleae enter your email.",
-    name: email
+    message: "Please enter your email.",
+    name: "email"
 }
 ])
 // this needs to be fixed
