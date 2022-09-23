@@ -1,5 +1,6 @@
 const fs = require ("fs");
 const inquirer = require("inquirer");
+const { Z_FIXED } = require("zlib");
 const createMD = require('./generateMD');
 
 inquirer
@@ -9,23 +10,23 @@ inquirer
     message: "Please provide the name of your project.",
     name: "name"
 }, {
-    type: "input",
+    type: "editor",
     message:"Please enter a desription of your project.",
     name: "description"
 }, {
-    type: "input",
+    type: "editor",
     message:"Please include all information about installation instructions",
     name:"installation"
 }, {
-    type:"input",
+    type:"editor",
     message:"Please include details about the usage of your project.",
     name:"usage"
 }, {
-    type:"input",
+    type:"editor",
     message:"Please include contribution guidelines.",
     name:"contributions"
 }, {
-    type:"input",
+    type:"editor",
     message:"Please including testing instructions for your project.",
     name: "testing"
 }, {
@@ -35,9 +36,10 @@ inquirer
     choices:[ "MIT", "Apache 2.0", "Mozilla Public, 2.0"]
 }
 ])
+// this needs to be fixed
 
-.then((response)=>
-    fs.appendFile('README.md', createREADME(data),(err) => 
-        err ? console.log(err) : console.log("Look at your readme page!")
-    )
-    );
+// .then((response)=>
+//     fs.appendFile('generateMD', createREADME(data),(err) => 
+//         err ? console.log(err) : console.log("Look at your readme page!")
+//     )
+//     );
