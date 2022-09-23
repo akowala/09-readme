@@ -1,6 +1,5 @@
 const fs = require ("fs");
 const inquirer = require("inquirer");
-const { Z_FIXED } = require("zlib");
 const createMD = require('./generateMD');
 
 inquirer
