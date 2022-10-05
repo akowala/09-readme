@@ -1,6 +1,7 @@
 const fs = require ("fs");
 const inquirer = require("inquirer");
 const createMD = require('./generateMD');
+    console.log(generateMD);
 
 inquirer
     .prompt([
@@ -43,10 +44,13 @@ inquirer
     name: "email"
 }
 ])
-// this needs to be fixed
 
-// .then((response)=>
-//     fs.appendFile('generateMD', createREADME(data),(err) => 
-//         err ? console.log(err) : console.log("Look at your readme page!")
-//     )
-//     );
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {}
+
+// TODO: Create a function to initialize app
+function init() {}
+
+// Function call to initialize app
+init();
